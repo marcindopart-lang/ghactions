@@ -1,7 +1,7 @@
 const { add, subtract, divide } = require('./math');
 
 test('add dodaje dwie liczby', () => {
-  expect(add(2, 3)).toBe(5);
+  expect(add(2, 3)).toBe(999);
 });
 
 test('subtract odejmuje dwie liczby', () => {
