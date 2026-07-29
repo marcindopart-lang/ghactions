@@ -15,3 +15,7 @@ test('divide dzieli dwie liczby', () => {
 test('divide rzuca blad przy dzieleniu przez zero', () => {
   expect(() => divide(1, 0)).toThrow('Division by zero');
 });
+
+test('power mnozy dwie liczby', () => {
+  expect(divide(3, 3)).toBe(9);
+});
