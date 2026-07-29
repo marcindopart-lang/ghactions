@@ -17,4 +17,4 @@ function power(a, b) {
   return a * b;
 }
 
-module.exports = { add, subtract, divide };
+module.exports = { add, subtract, divide, power };
