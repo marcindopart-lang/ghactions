@@ -1,0 +1,16 @@
+{
+  "name": "ghactions-playground",
+  "version": "1.0.0",
+  "description": "Przykladowy projekt do nauki pisania workflow GitHub Actions od zera",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^9.9.0",
+    "jest": "^29.7.0"
+  }
+}
