@@ -17,5 +17,5 @@ test('divide rzuca blad przy dzieleniu przez zero', () => {
 });
 
 test('power mnozy dwie liczby', () => {
-  expect(divide(3, 3)).toBe(9);
+  expect(power(3, 3)).toBe(9);
 });
