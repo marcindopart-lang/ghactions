@@ -12,7 +12,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24.x
-          package-manager-cache: true
           cache: 'npm'
       - run: npm ci
       - run: npm run lint
@@ -23,7 +22,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24.x
-          package-manager-cache: true
           cache: 'npm'
       - run: npm ci
       - run: npm test
