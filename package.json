@@ -1,8 +1,11 @@
 {
-  "name": "ghactions-playground",
+  "name": "@marcin14092021/ghactions-playground",
   "version": "1.0.0",
   "description": "Przykladowy projekt do nauki pisania workflow GitHub Actions od zera",
   "main": "src/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "jest",
     "lint": "eslint ."
