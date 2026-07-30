@@ -33,4 +33,6 @@ jobs:
     needs: [lint, test]
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     steps:
-      - run: echo "Deploying..."
+      - run: echo "Deploying with token $DEPLOY_TOKEN"
+        env:
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
