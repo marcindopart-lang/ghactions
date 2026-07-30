@@ -7,10 +7,14 @@
     "access": "public"
   },
   "scripts": {
+    "start": "node src/server.js",
     "test": "jest",
     "lint": "eslint ."
   },
   "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "eslint": "^9.9.0",
