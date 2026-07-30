@@ -11,20 +11,20 @@ app.get('/', (req, res) => {
 app.get('/add', (req, res) => {
   const a = Number(req.query.a);
   const b = Number(req.query.b);
-  res.json({ result: add(a, b) });
+  res.json({ result_add: add(a, b) });
 });
 
 app.get('/subtract', (req, res) => {
   const a = Number(req.query.a);
   const b = Number(req.query.b);
-  res.json({ result: subtract(a, b) });
+  res.json({ result_subtract: subtract(a, b) });
 });
 
 app.get('/divide', (req, res) => {
   const a = Number(req.query.a);
   const b = Number(req.query.b);
   try {
-    res.json({ result: divide(a, b) });
+    res.json({ result_divide: divide(a, b) });
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
@@ -33,7 +33,7 @@ app.get('/divide', (req, res) => {
 app.get('/power', (req, res) => {
   const a = Number(req.query.a);
   const b = Number(req.query.b);
-  res.json({ result: power(a, b) });
+  res.json({ result_power: power(a, b) });
 });
 
 app.listen(port, () => {
