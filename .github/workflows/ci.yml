@@ -28,6 +28,14 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm test
+  deploy-server:
+    runs-on: ubuntu-latest
+    needs: [lint, test]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+      - run: curl -X POST "$RENDER_DEPLOY_HOOK"
+        env:
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
   deploy:
     runs-on: ubuntu-latest
     needs: [lint, test]
