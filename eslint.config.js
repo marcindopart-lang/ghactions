@@ -10,6 +10,7 @@ module.exports = [
         require: 'readonly',
         module: 'readonly',
         console: 'readonly',
+        process: 'readonly',
       },
     },
   },
